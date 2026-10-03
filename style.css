@@ -43,7 +43,6 @@ body {
 
 .card_guide {
     text-align: center;
-    font-family: Consolas, Arial, sans-serif;
     color: rgb(183, 77, 136);
 }
 
@@ -94,7 +93,6 @@ hr {
     content: ">";
     border: none;
     background-color: rgb(226, 91, 166);
-    font-family: Consolas, Arial, sans-serif;
     color: rgb(216, 165, 193);
     height: 30px;
     width: 30px;
@@ -119,7 +117,6 @@ hr {
 #envelope {
     display: flex;
     justify-content: center;
-    font-family: Consolas, Arial, sans-serif;
     color: rgb(228, 194, 182);
     margin-top: 20px;
     background-color: rgb(166, 104, 68);
@@ -136,14 +133,12 @@ hr {
 }
 
 .warning {
-    font-family: Consolas, Arial, sans-serif;
     margin: 30px auto 100px auto;
     text-align: center;
 }
 
 
 #message {
-    font-family: Consolas, Arial, sans-serif;
     margin: 30px auto 100px auto;
     text-align: center;
     display: none;

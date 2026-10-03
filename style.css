@@ -1,0 +1,162 @@
+h1 {
+    color: pink;
+    background-color: rgb(217, 70, 151);
+    border: rgb(141, 73, 110);
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+}
+
+body {
+    background-color: rgb(232, 175, 214);
+}    
+
+#cake_lit {
+    height: 300px;
+    width: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cake_btn {
+    margin-top: 10px;
+    color: pink;
+    background-color: rgb(217, 70, 151);
+    border: rgb(141, 73, 110);
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#cake_btn:hover {
+    color: rgb(212, 217, 115);
+    background-color: rgb(162, 162, 127);
+    border: rgb(88, 86, 61);
+    transform: scale(1.1);
+}
+
+.card_guide {
+    text-align: center;
+    font-family: Consolas, Arial, sans-serif;
+    color: rgb(183, 77, 136);
+}
+
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(207, 50, 158);
+}
+
+.card_content {
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(237, 185, 213);
+    border: rgb(183, 77, 136);
+    box-shadow: 5px -5px 8px rgb(183, 77, 136);
+    border-radius: 15px;
+    border-style: solid;
+    margin-top: 20px;
+    flex: 0 0 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.whole_cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --card-container;
+    scroll-snap-type: x mandatory;
+}
+
+.whole_cards::-webkit-scrollbar {
+    display: none;
+}
+
+.whole_cards::scroll-button(right), .whole_cards::scroll-button(left) {
+    content: ">";
+    border: none;
+    background-color: rgb(226, 91, 166);
+    font-family: Consolas, Arial, sans-serif;
+    color: rgb(216, 165, 193);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --card-container;
+    position-area: right center;
+}
+
+.whole_cards::scroll-button(left) {
+    content: "<";
+    position-area: left center;
+}
+
+.whole_cards::scroll-button(right):disabled, .whole_cards::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#envelope {
+    display: flex;
+    justify-content: center;
+    font-family: Consolas, Arial, sans-serif;
+    color: rgb(228, 194, 182);
+    margin-top: 20px;
+    background-color: rgb(166, 104, 68);
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px -5px 8px rgb(112, 70, 46);
+    border: solid rgb(72, 47, 32);
+}
+
+#envelope:hover {
+    background-color: rgb(210, 143, 105);
+}
+
+.warning {
+    font-family: Consolas, Arial, sans-serif;
+    margin: 30px auto 100px auto;
+    text-align: center;
+}
+
+
+#message {
+    font-family: Consolas, Arial, sans-serif;
+    margin: 30px auto 100px auto;
+    text-align: center;
+    display: none;
+}
+
+
+@media(max-width: 500px) {
+    .card {
+        flex: 0 0 95%;
+    }
+
+    .card_content {
+        flex: 0 0 95%;
+    }
+}
+
